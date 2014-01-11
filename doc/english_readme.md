@@ -1,18 +1,18 @@
 # validates_russian
 
-[[english_doc](doc/english_readme.md)]
+[[по-русски](README.md)]
 
-Валидация русских значений:
+Russian specific values validation:
 
-* ИНН (TODO)
-* ОКПО (TODO)
-* ОКАТО (TODO)
-* КПП (TODO)
-* ОГРН (TODO)
+* INN (TODO)
+* OKPO (TODO)
+* OKATO (TODO)
+* KPP (TODO)
+* OGRN (TODO)
 
-## Установка
+## Installation
 
-Добавь в Gemfile
+Add to Gemfile
 
     gem 'validates_russian'
 
