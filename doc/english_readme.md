@@ -9,6 +9,8 @@ Russian specific values validation:
 * OKATO (TODO)
 * KPP (TODO)
 * OGRN (TODO)
+* Correspondent Account Value (TODO)
+* Bank Account Value (TODO)
 
 ## Installation
 

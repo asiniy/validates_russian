@@ -1,6 +1,7 @@
 # validates_russian
 
 [[english_doc](doc/english_readme.md)]
+[[инструкции разработчикам](https://github.com/asiniy/validates_russian/wiki/Инструкции-разработчикам)]
 
 Валидация русских значений:
 
@@ -9,6 +10,8 @@
 * ОКАТО (TODO)
 * КПП (TODO)
 * ОГРН (TODO)
+* Корреспондентский счёт (TODO)
+* Рассчётный счёт (TODO)
 
 ## Установка
 
