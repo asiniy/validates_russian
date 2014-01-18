@@ -2,6 +2,7 @@
 
 [[english_doc](doc/english_readme.md)]
 [[инструкции разработчикам](https://github.com/asiniy/validates_russian/wiki/Инструкции-разработчикам)]
+[![Gem Version](https://badge.fury.io/rb/validates_russian.png)](http://badge.fury.io/rb/validates_russian)
 [![Build Status](https://travis-ci.org/asiniy/validates_russian.png?branch=master)](https://travis-ci.org/asiniy/validates_russian)
 
 Валидация русских значений:
