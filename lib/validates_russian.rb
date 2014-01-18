@@ -1,6 +1,7 @@
-require 'validates_russian/version'
+require 'active_model'
 
-Dir['/validators/*.rb'].each{ |f| require f }
+dirs = %w{ validates_russian validators }
 
-module ValidatesRussian
+dirs.each do |dir|
+  Dir[File.dirname(__FILE__) + '/' + dir + '/*.rb'].each { |f| require f }
 end
