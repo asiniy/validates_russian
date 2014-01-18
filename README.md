@@ -8,7 +8,7 @@
 * ИНН (TODO)
 * ОКПО (TODO)
 * ОКАТО (TODO)
-* КПП (TODO)
+* [КПП](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт)
 * ОГРН (TODO)
 * Корреспондентский счёт (TODO)
 * Рассчётный счёт (TODO)
@@ -19,9 +19,19 @@
 
     gem 'validates_russian'
 
-## Usage
+## Использование
 
-TODO: Write usage instructions here
+```ruby
+class Legal < ActiveRecord::Base
+  validates :kpp, kpp: true
+end
+
+# legal = Legal.new
+# legal.kpp = '001122333'
+# legal.valid? # => false
+# legal.kpp = '525601001'
+# legal.valid? # => true
+```
 
 ## Contributing
 

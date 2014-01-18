@@ -7,7 +7,7 @@ Russian specific values validation:
 * INN (TODO)
 * OKPO (TODO)
 * OKATO (TODO)
-* KPP (TODO)
+* [KPP](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (Code of reason for registration)
 * OGRN (TODO)
 * Correspondent Account Value (TODO)
 * Bank Account Value (TODO)
@@ -20,7 +20,17 @@ Add to Gemfile
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+class Legal < ActiveRecord::Base
+  validates :kpp, kpp: true
+end
+
+# legal = Legal.new
+# legal.kpp = '001122333'
+# legal.valid? # => false
+# legal.kpp = '525601001'
+# legal.valid? # => true
+```
 
 ## Contributing
 
