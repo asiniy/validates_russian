@@ -1,6 +1,7 @@
 # validates_russian
 
 [[по-русски](README.md)]
+[![Build Status](https://travis-ci.org/asiniy/validates_russian.png?branch=master)](https://travis-ci.org/asiniy/validates_russian)
 
 Russian specific values validation:
 
