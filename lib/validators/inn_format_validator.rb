@@ -1,4 +1,4 @@
-class InnValidator < ValidatesRussian::Validator
+class InnFormatValidator < ValidatesRussian::Validator
   validates_using do |inn|
     next false unless ValidatesRussian::REGION_NUMBERS.include?(inn[0..1])
     next false unless inn =~ /^\d+$/
