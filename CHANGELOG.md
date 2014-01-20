@@ -1,5 +1,6 @@
-### not released yet
+### 0.0.4
 
+* Added OkpoFormatValidator
 * InnValidator and KppValidator were renamed to InnFormat and KppFormat validators
 
 ### 0.0.3

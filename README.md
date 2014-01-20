@@ -8,10 +8,10 @@
 
 Валидация русских значений:
 
-* [ИНН](http://ru.wikipedia.org/wiki/Идентификационный_номер_налогоплательщика)
-* [ОКПО](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций)
+* [ИНН](http://ru.wikipedia.org/wiki/Идентификационный_номер_налогоплательщика) (InnFormatValidator)
+* [ОКПО](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций) (OkpoFormatValidator)
 * ОКАТО (TODO)
-* [КПП](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт)
+* [КПП](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator)
 * ОГРН (TODO)
 * Корреспондентский счёт (TODO)
 * Рассчётный счёт (TODO)
@@ -23,6 +23,14 @@
     gem 'validates_russian'
 
 ## Использование
+
+Используй валидаторы в своей модели
+
+```ruby
+validates :attribute, <validator_underscore>: true
+```
+
+где `<validator_underscore>` это название валидатора
 
 ```ruby
 class Legal < ActiveRecord::Base
