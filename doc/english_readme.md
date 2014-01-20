@@ -8,7 +8,7 @@
 Russian specific values validation:
 
 * [INN](http://ru.wikipedia.org/wiki/Идентификационный_номер_налогоплательщика) (Russian analogue of VAT identification number)
-* OKPO (TODO)
+* [OKPO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций)
 * OKATO (TODO)
 * [KPP](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (Code of reason for registration)
 * OGRN (TODO)
