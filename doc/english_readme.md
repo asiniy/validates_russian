@@ -7,10 +7,10 @@
 
 Russian specific values validation:
 
-* [INN](http://ru.wikipedia.org/wiki/Идентификационный_номер_налогоплательщика) (Russian analogue of VAT identification number)
-* [OKPO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций)
+* [INN](http://ru.wikipedia.org/wiki/Идентификационный_номер_налогоплательщика) (InnFormatValidator) Russian analogue of VAT identification number
+* [OKPO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций) (OkpoFormatValidator) Legal code
 * OKATO (TODO)
-* [KPP](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (Code of reason for registration)
+* [KPP](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator) Code of reason for registration
 * OGRN (TODO)
 * Correspondent Account Value (TODO)
 * Bank Account Value (TODO)
@@ -22,6 +22,14 @@ Add to Gemfile
     gem 'validates_russian'
 
 ## Usage
+
+For most of the validators you just want to add this line to your model:
+
+```ruby
+validates :attribute, <validator_underscore>: true
+```
+
+where `<validator_underscore>` is an underscored, lowercase form from the validator's name (see the example section below).
 
 ```ruby
 class Legal < ActiveRecord::Base
