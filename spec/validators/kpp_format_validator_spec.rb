@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe KppValidator do
+describe KppFormatValidator do
   before(:each) do
     TestModel.reset_callbacks(:validate)
-    TestModel.validates(:field, kpp: true)
+    TestModel.validates(:field, kpp_format: true)
   end
 
   it 'should be valid for valid values' do

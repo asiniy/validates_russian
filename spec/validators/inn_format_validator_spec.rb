@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe InnValidator do
+describe InnFormatValidator do
   before(:each) do
     TestModel.reset_callbacks(:validate)
-    TestModel.validates(:field, inn: true)
+    TestModel.validates(:field, inn_format: true)
   end
 
   it 'should be valid for valid values' do

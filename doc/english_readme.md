@@ -25,7 +25,7 @@ Add to Gemfile
 
 ```ruby
 class Legal < ActiveRecord::Base
-  validates :kpp, kpp: true
+  validates :kpp, kpp_format: true
 end
 
 # legal = Legal.new
