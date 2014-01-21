@@ -13,8 +13,8 @@
 * ОКАТО (TODO)
 * [КПП](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator)
 * ОГРН (TODO)
-* Корреспондентский счёт (TODO)
-* Рассчётный счёт (TODO)
+* [Корреспондентский счёт] (http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
+* [Рассчётный счёт] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
 
 ## Установка
 

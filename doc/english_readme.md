@@ -12,8 +12,8 @@ Russian specific values validation:
 * OKATO (TODO)
 * [KPP](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator) Code of reason for registration
 * OGRN (TODO)
-* Correspondent Account Value (TODO)
-* Bank Account Value (TODO)
+* [Correspondent Account Value] (http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
+* [Bank Account Value] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
 
 ## Installation
 
