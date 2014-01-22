@@ -12,7 +12,7 @@
 * [ОКПО](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций) (OkpoFormatValidator)
 * ОКАТО (TODO)
 * [КПП](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator)
-* ОГРН (TODO)
+* [ОГРН](http://ru.wikipedia.org/wiki/Основной_государственный_регистрационный_номер) (OgrnFormatValidator)
 * Корреспондентский счёт (TODO)
 * Рассчётный счёт (TODO)
 

@@ -11,7 +11,7 @@ Russian specific values validation:
 * [OKPO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций) (OkpoFormatValidator) Legal code
 * OKATO (TODO)
 * [KPP](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator) Code of reason for registration
-* OGRN (TODO)
+* [OGRN](http://ru.wikipedia.org/wiki/Основной_государственный_регистрационный_номер) (OgrnFormatValidator) Main state registration number
 * Correspondent Account Value (TODO)
 * Bank Account Value (TODO)
 
