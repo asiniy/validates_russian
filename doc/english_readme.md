@@ -9,11 +9,13 @@ Russian specific values validation:
 
 * [INN](http://ru.wikipedia.org/wiki/Идентификационный_номер_налогоплательщика) (InnFormatValidator) Russian analogue of VAT identification number
 * [OKPO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций) (OkpoFormatValidator) Legal code
-* OKATO (TODO)
 * [KPP](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator) Code of reason for registration
 * [OGRN](http://ru.wikipedia.org/wiki/Основной_государственный_регистрационный_номер) (OgrnFormatValidator) Main state registration number
 * [Correspondent Account Value] (http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
 * [Bank Account Value] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
+* OKATO (TODO v0.0.6)
+* SNILS (TODO v0.0.6)
+* Passport Value (TODO v.0.0.6)
 
 ## Installation
 
