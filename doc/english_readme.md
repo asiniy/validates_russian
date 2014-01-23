@@ -15,7 +15,7 @@ Russian specific values validation:
 * [Bank Account Value] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
 * OKATO (TODO v0.0.6)
 * SNILS (TODO v0.0.6)
-* Passport Value (TODO v.0.0.6)
+* [Passport Value](http://ru.wikipedia.org/wiki/Паспорт_гражданина_Российской_Федерации) (PassportFormatValidator)
 
 ## Installation
 
