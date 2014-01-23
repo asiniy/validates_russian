@@ -14,7 +14,7 @@ Russian specific values validation:
 * [Correspondent Account Value] (http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
 * [Bank Account Value] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
 * OKATO (TODO v0.0.6)
-* SNILS (TODO v0.0.6)
+* [SNILS](http://ru.wikipedia.org/wiki/Страховой_номер_индивидуального_лицевого_счёта) (SnilsFormatValidator)
 * Passport Value (TODO v.0.0.6)
 
 ## Installation
