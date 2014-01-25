@@ -15,7 +15,7 @@
 * [Корреспондентский счёт] (http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
 * [Рассчётный счёт] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
 * ОКАТО (TODO v0.0.6)
-* СНИЛС (TODO v0.0.6)
+* [СНИЛС](http://ru.wikipedia.org/wiki/Страховой_номер_индивидуального_лицевого_счёта) (SnilsFormatValidator)
 * Значение паспорта (TODO v0.0.6)
 
 ## Установка
