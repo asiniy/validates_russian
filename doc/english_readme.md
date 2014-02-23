@@ -13,9 +13,9 @@ Russian specific values validation:
 * [OGRN](http://ru.wikipedia.org/wiki/Основной_государственный_регистрационный_номер) (OgrnFormatValidator) Main state registration number
 * [Correspondent Account Value] (http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
 * [Bank Account Value] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
-* OKATO (TODO v0.0.6)
+* [OKATO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_объектов_административно-территориального_деления) (OkatoFormatValidator)
 * [SNILS](http://ru.wikipedia.org/wiki/Страховой_номер_индивидуального_лицевого_счёта) (SnilsFormatValidator)
-* Passport Value (TODO v.0.0.6)
+* [Passport Value](http://ru.wikipedia.org/wiki/Паспорт_гражданина_Российской_Федерации) (PassportFormatValidator)
 
 ## Installation
 

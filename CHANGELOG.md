@@ -1,3 +1,13 @@
+### 0.0.6
+
+* PassportFormatValidator
+* OkatoFormatValidator
+* SnilsFormatValidator
+
+### 0.0.5
+
+* Added OgrnValidator
+
 ### 0.0.4
 
 * Added OkpoFormatValidator
