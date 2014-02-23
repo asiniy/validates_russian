@@ -2,19 +2,19 @@ class InnFormatValidator < ValidatesRussian::Validator
   validates_using do |inn|
     next false unless ValidatesRussian::REGION_NUMBERS.include?(inn[0..1])
     next false unless inn =~ /^\d+$/
-    next false if inn.size != 10 && inn.size != 12
 
     inn = inn.split(//).map(&:to_i)
 
-    if inn.size == 10
+    case inn.size
+    when 10
       n10 = calc(P10, inn)
       next false unless n10 == inn[9]
-    end
-
-    if inn.size == 12
+    when 12
       n11 = calc(P11, inn)
       n12 = calc(P12, inn)
       next false unless n11 == inn[10] && n12 == inn[11]
+    else
+      next false
     end
   end
 
