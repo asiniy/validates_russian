@@ -16,7 +16,7 @@
 * [Рассчётный счёт](http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
 * [OKATO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_объектов_административно-территориального_деления) (OkatoFormatValidator)
 * СНИЛС (TODO v0.0.6)
-* Значение паспорта (TODO v0.0.6)
+* [Значение паспорта](http://ru.wikipedia.org/wiki/Паспорт_гражданина_Российской_Федерации) (PassportFormatValidator)
 
 ## Установка
 
