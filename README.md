@@ -12,9 +12,9 @@
 * [ОКПО](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_предприятий_и_организаций) (OkpoFormatValidator)
 * [КПП](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator)
 * [ОГРН](http://ru.wikipedia.org/wiki/Основной_государственный_регистрационный_номер) (OgrnFormatValidator)
-* [Корреспондентский счёт] (http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
-* [Рассчётный счёт] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
-* ОКАТО (TODO v0.0.6)
+* [Корреспондентский счёт](http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
+* [Рассчётный счёт](http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
+* [OKATO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_объектов_административно-территориального_деления) (OkatoFormatValidator)
 * СНИЛС (TODO v0.0.6)
 * Значение паспорта (TODO v0.0.6)
 
