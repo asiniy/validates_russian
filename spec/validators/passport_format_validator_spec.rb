@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe PassportFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, passport_format: true)
   end
@@ -15,9 +15,7 @@ describe PassportFormatValidator do
     }
 
     valid_passports.each do |passport|
-      model = TestModel.new
-      model.field = passport
-      model.should be_valid
+      expect(TestModel.new(field: passport)).to be_valid
     end
   end
 
@@ -30,9 +28,7 @@ describe PassportFormatValidator do
     }.push('', ' ', nil, [], {})
 
     invalid_passports.each do |passport|
-      model = TestModel.new
-      model.field = passport
-      model.should_not be_valid
+      expect(TestModel.new(field: passport)).to_not be_valid
     end
   end
 end

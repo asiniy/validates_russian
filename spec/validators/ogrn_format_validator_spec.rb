@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe OgrnFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, ogrn_format: true)
   end
@@ -15,9 +15,7 @@ describe OgrnFormatValidator do
     }
 
     valid_ogrns.each do |ogrn|
-      model = TestModel.new
-      model.field = ogrn
-      model.should be_valid
+      expect(TestModel.new(field: ogrn)).to be_valid
     end
   end
 
@@ -30,9 +28,7 @@ describe OgrnFormatValidator do
     }.push('', ' ', nil, [], {})
 
     invalid_ogrns.each do |ogrn|
-      model = TestModel.new
-      model.field = ogrn
-      model.should_not be_valid
+      expect(TestModel.new(field: ogrn)).to be_invalid
     end
   end
 end

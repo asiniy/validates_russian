@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe OkatoFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, okato_format: true)
   end
@@ -15,9 +15,7 @@ describe OkatoFormatValidator do
     }
 
     valid_okatos.each do |okato|
-      model = TestModel.new
-      model.field = okato
-      model.should be_valid
+      expect(TestModel.new(field: okato)).to be_valid
     end
   end
 
@@ -30,9 +28,7 @@ describe OkatoFormatValidator do
     }.push('', ' ', nil, [], {})
 
     invalid_okatos.each do |okato|
-      model = TestModel.new
-      model.field = okato
-      model.should_not be_valid
+      expect(TestModel.new(field: okato)).to_not be_valid
     end
   end
 end
