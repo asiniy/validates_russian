@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe OkpoFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, okpo_format: true)
   end
@@ -14,9 +14,7 @@ describe OkpoFormatValidator do
     }
 
     valid_okpos.each do |okpo|
-      model = TestModel.new
-      model.field = okpo
-      model.should be_valid
+      expect(TestModel.new(field: okpo)).to be_valid
     end
   end
 
@@ -29,9 +27,7 @@ describe OkpoFormatValidator do
     }.push('', ' ', nil, [], {})
 
     valid_okpos.each do |okpo|
-      model = TestModel.new
-      model.field = okpo
-      model.should_not be_valid
+      expect(TestModel.new(field: okpo)).to_not be_valid
     end
   end
 end

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe KsFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, ks_format: true)
   end
@@ -14,9 +14,7 @@ describe KsFormatValidator do
     }
 
     valid_kss.each do |ks|
-      model = TestModel.new
-      model.field = ks
-      model.should be_valid
+      expect(TestModel.new(field: ks)).to be_valid
     end
   end
 
@@ -29,9 +27,7 @@ describe KsFormatValidator do
     }.push('', ' ', nil, [], {})
 
     invalid_kss.each do |ks|
-      model = TestModel.new
-      model.field = ks
-      model.should_not be_valid
+      expect(TestModel.new(field: ks)).to_not be_valid
     end
   end
 end
