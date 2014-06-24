@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe InnFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, inn_format: true)
   end
@@ -22,9 +22,7 @@ describe InnFormatValidator do
     }
 
     valid_inns.each do |inn|
-      model = TestModel.new
-      model.field = inn
-      model.should be_valid
+      expect(TestModel.new(field: inn)).to be_valid
     end
   end
 
@@ -40,9 +38,7 @@ describe InnFormatValidator do
     ).push('', ' ', nil)
 
     invalid_inns.each do |inn|
-      model = TestModel.new
-      model.field = inn
-      model.should_not be_valid
+      expect(TestModel.new(field: inn)).to_not be_valid
     end
   end
 end

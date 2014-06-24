@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe SnilsFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, snils_format: true)
   end
@@ -15,9 +15,7 @@ describe SnilsFormatValidator do
     }
 
     valid_snilses.each do |snils|
-      model = TestModel.new
-      model.field = snils
-      model.should be_valid
+      expect(TestModel.new(field: snils)).to be_valid
     end
   end
 
@@ -31,9 +29,7 @@ describe SnilsFormatValidator do
     }.push('', ' ', nil, [], {})
 
     invalid_snilses.each do |snils|
-      model = TestModel.new
-      model.field = snils
-      model.should_not be_valid
+      expect(TestModel.new(field: snils)).to be_invalid
     end
   end
 end

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe RsFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, rs_format: true)
   end
@@ -14,9 +14,7 @@ describe RsFormatValidator do
     }
 
     valid_rss.each do |rs|
-      model = TestModel.new
-      model.field = rs
-      model.should be_valid
+      expect(TestModel.new(field: rs)).to be_valid
     end
   end
 
@@ -30,9 +28,7 @@ describe RsFormatValidator do
     }.push('', ' ', nil, [], {})
 
     invalid_rss.each do |rs|
-      model = TestModel.new
-      model.field = rs
-      model.should_not be_valid
+      expect(TestModel.new(field: rs)).to_not be_valid
     end
   end
 end

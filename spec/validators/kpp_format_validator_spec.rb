@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe KppFormatValidator do
-  before(:each) do
+  before(:all) do
     TestModel.reset_callbacks(:validate)
     TestModel.validates(:field, kpp_format: true)
   end
@@ -14,9 +14,7 @@ describe KppFormatValidator do
     }
 
     valid_kpps.each do |kpp|
-      model = TestModel.new
-      model.field = kpp
-      model.should be_valid
+      expect(TestModel.new(field: kpp)).to be_valid
     end
   end
 
@@ -30,9 +28,7 @@ describe KppFormatValidator do
     }.push('', ' ', nil, [], {})
 
     valid_kpps.each do |kpp|
-      model = TestModel.new
-      model.field = kpp
-      model.should_not be_valid
+      expect(TestModel.new(field: kpp)).to_not be_valid
     end
   end
 end
