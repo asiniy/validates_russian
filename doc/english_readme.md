@@ -16,6 +16,7 @@ Russian specific values validation:
 * [OKATO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_объектов_административно-территориального_деления) (OkatoFormatValidator)
 * [SNILS](http://ru.wikipedia.org/wiki/Страховой_номер_индивидуального_лицевого_счёта) (SnilsFormatValidator)
 * [Passport Value](http://ru.wikipedia.org/wiki/Паспорт_гражданина_Российской_Федерации) (PassportFormatValidator)
+* [BIK](http://ru.wikipedia.org/wiki/БИК) (BikFormatValidator) Bank Identification Number
 
 ## Installation
 
