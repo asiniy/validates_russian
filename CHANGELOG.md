@@ -1,3 +1,8 @@
+### 0.0.7
+
+* BikValidator
+* OkpoValidator fix for okpo ended with zero
+
 ### 0.0.6
 
 * PassportFormatValidator
