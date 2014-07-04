@@ -10,6 +10,10 @@ describe OkpoFormatValidator do
     valid_okpos = %w{
       57972160
       13410254
+      74917270
+      99874891
+      75249303
+      99874891
       0060621966
     }
 
