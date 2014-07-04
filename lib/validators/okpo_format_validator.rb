@@ -11,6 +11,6 @@ class OkpoFormatValidator < ValidatesRussian::Validator
   private
 
   def self.calc(okpo)
-    okpo[0..-2].each_with_index.inject(0){ |s, p| s + p[0] * (p[1] + 1) } % 11
+    okpo[0..-2].each_with_index.inject(0){ |s, p| s + p[0] * (p[1] + 1) } % 11 % 10
   end
 end
