@@ -19,6 +19,8 @@
 * [Значение паспорта](http://ru.wikipedia.org/wiki/Паспорт_гражданина_Российской_Федерации) (PassportFormatValidator)
 * [БИК](http://ru.wikipedia.org/wiki/БИК) (BikFormatValidator)
 
+Для генерации фейковых значений используй [gem 'faker-russian'](https://github.com/asiniy/faker-russian)
+
 ## Установка
 
 Добавь в Gemfile

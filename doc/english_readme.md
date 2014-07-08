@@ -18,6 +18,8 @@ Russian specific values validation:
 * [Passport Value](http://ru.wikipedia.org/wiki/Паспорт_гражданина_Российской_Федерации) (PassportFormatValidator)
 * [BIK](http://ru.wikipedia.org/wiki/БИК) (BikFormatValidator) Bank Identification Number
 
+For generating fake values use [gem 'faker-russian'](https://github.com/asiniy/faker-russian)
+
 ## Installation
 
 Add to Gemfile
