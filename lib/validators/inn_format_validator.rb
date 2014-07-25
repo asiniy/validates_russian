@@ -6,15 +6,9 @@ class InnFormatValidator < ValidatesRussian::Validator
     inn = inn.split(//).map(&:to_i)
 
     case inn.size
-    when 10
-      n10 = calc(P10, inn)
-      next false unless n10 == inn[9]
-    when 12
-      n11 = calc(P11, inn)
-      n12 = calc(P12, inn)
-      next false unless n11 == inn[10] && n12 == inn[11]
-    else
-      next false
+    when 10 then next false unless calc(P10, inn) == inn[9]
+    when 12 then next false unless calc(P11, inn) == inn[10] && calc(P12, inn) == inn[11]
+    else next false
     end
   end
 
