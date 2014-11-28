@@ -13,7 +13,7 @@
 * [КПП](http://ru.wikipedia.org/wiki/Код_причины_постановки_на_учёт) (KppFormatValidator)
 * [ОГРН](http://ru.wikipedia.org/wiki/Основной_государственный_регистрационный_номер) (OgrnFormatValidator)
 * [Корреспондентский счёт] (http://ru.wikipedia.org/wiki/Корреспондентский_счёт) (KsFormatValidator)
-* [Рассчётный счёт] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
+* [Расчётный счёт] (http://ru.wikipedia.org/wiki/Расчётный_счёт) (RsFormatValidator)
 * [OKATO](http://ru.wikipedia.org/wiki/Общероссийский_классификатор_объектов_административно-территориального_деления) (OkatoFormatValidator)
 * [СНИЛС](http://ru.wikipedia.org/wiki/Страховой_номер_индивидуального_лицевого_счёта) (SnilsFormatValidator)
 * [Значение паспорта](http://ru.wikipedia.org/wiki/Паспорт_гражданина_Российской_Федерации) (PassportFormatValidator)
