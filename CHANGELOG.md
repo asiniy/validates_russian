@@ -1,3 +1,8 @@
+### 0.0.8
+
+* Validate the Crimea region numbers
+* Speeding up a validators
+
 ### 0.0.7
 
 * BikValidator
