@@ -16,6 +16,7 @@ describe OkpoFormatValidator do
       75249303
       99874891
       0060621966
+      0174266916
     }
 
     valid_okpos.each do |okpo|
