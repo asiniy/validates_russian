@@ -18,6 +18,10 @@ class OkpoFormatValidator < ValidatesRussian::Validator
   end
 
   def self.weight(nums, shift)
-    nums.each_with_index.inject(0) { |a, e| a + e[0] * (e[1] + shift) }
+    nums.each_with_index.inject(0) { |a, e| a + e[0] * calc_weight(e[1] + shift) }
+  end
+
+  def self.calc_weight(num)
+    num == 11 ? 1 : num
   end
 end
