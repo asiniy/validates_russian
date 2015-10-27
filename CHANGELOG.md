@@ -1,7 +1,11 @@
+### 0.0.9
+
+* Fixed OkpoValidator
+
 ### 0.0.8
 
 * Validate the Crimea region numbers
-* Speeding up a validators
+* Speeding up validators
 
 ### 0.0.7
 
