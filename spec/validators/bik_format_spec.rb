@@ -25,6 +25,7 @@ describe BikFormatValidator do
 
   it 'should not be valid for invalid values' do
     invalid_biks = %w(
+      04452595
       040205770
       549205770
       #ffff
