@@ -11,6 +11,17 @@ class OkpoFormatValidator < ValidatesRussian::Validator
   private
 
   def self.calc(okpo)
-    okpo[0..-2].each_with_index.inject(0){ |s, p| s + p[0] * (p[1] + 1) } % 11 % 10
+    nums = okpo[0..-2]
+    check_digit = weight(nums, 1) % 11
+    check_digit = weight(nums, 3) % 11 if check_digit == 10
+    check_digit == 10 ? 0 : check_digit
+  end
+
+  def self.weight(nums, shift)
+    nums.each_with_index.inject(0) { |a, e| a + e[0] * calc_weight(e[1] + shift) }
+  end
+
+  def self.calc_weight(num)
+    num == 11 ? 1 : num
   end
 end
